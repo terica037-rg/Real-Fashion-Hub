@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    font-family: arial, sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    position: absolute;
+    top:0;
+    width:100px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    z-index: 1000;
+}
+
+.logo {
+    color:white;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+navbar nav{
+    display:flex;
+    gap:30px;
+}
+
+.navbar nav a{
+    color:white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar nav a:hover{
+    border-bottom: 2px solid white;
+}
+
+.hero{
+    height:100vh;
+    background: url('img/header.png') no-repeat center/cover;
+}
+
+.overlay{
+    background: rgba(0,0,0,0.6);
+    height:100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+}
+
+.hero-content{
+    color:white;
+    max-width: 600px;
+}
+
+.hero-content h1{
+    font-size: 42px;
+    margin:15px 0;
+}
+
+.hero-content p{
+    margin:10px 0;
+}
+
+
+.highlight{
+    font-weight: bold;
+    color:gold
+}
+
+.hero-btn{
+    display:inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    border: 2px solid white;
+    color:white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.hero-btn:hover{
+    background:white;
+    color:black;
+}
+
+.products-section{
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.products-section h2{
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.products {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap:25px;
+}
+
+.product{
+    background: #fff;
+    padding:15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.product:hover{
+    transform: translateY(-5px);
+}
+
+.product img{
+    object-fit: cover;
+    height:250px;
+    width:100px;
+}
+
+.product h3{
+    margin:10px 0;
+}
+
+product button{
+    width:100%;
+    padding:10px;
+    border:none;
+    background: black;
+    color:white;
+    cursor:pointer;
+}
+
+.product img:hover {
+    transform: scale(1.1);
+}
+
+product button:hover{
+    background:gold;
+    color:black;
+}
+
+.split-section {
+    display: flex;
+    align-items: center;
+    padding:60px 40px;
+    gap:40px;
+}
+
+.split-text{
+    flex:1;
+}
+
+.split-text h2{
+    font-size:32px;
+}
+
+.split-image img{
+    width:100%;
+}
+
+.banner{
+    height:60vh;
+    background: url('img/dress6.png') no-repeat center/cover;
+    display:flex;
+    align-items:center;
+    padding:40px;
+    color:white;
+}
+
+.banner h2{
+    font-size: 32px;
+}
+
+.product button{
+    margin-top: 10px;
+    padding: 10px;
+    border:none;
+    background: black;  
+    color:white;
+    cursor: pointer; 
+    width: 100%;
+}
+
+.product button:hover{
+    background: pink;
+    color: black;
+}
+
+.testimonial{
+    background: url('img/dress5.png') no-repeat center/cover;
+}
+
+.testimonial .overlay{
+    padding:80px 20px;
+}
+
+.stars{
+    margin-bottom: 10px;
+}
+
+#main_ul{
+    text-align: right;
+    text-decoration: none;
+}
+#main_ul li{
+    display: inline-block;
+    padding:20px;
+}
+
+#main_ul li a{
+    text-decoration: none;
+    color:black;
+}
+
+#app_gh{
+    height: 50px;
+    border:2px solid black;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 30px;
+    font-size: 10px;
+    font:#333;
+    background-color: red;
+
+}
+
+@media (max-width:768px){
+    .split-section{
+        flex-direction: column;
+    }
+    .hero-content h1{
+        font-size: 26px;
+    }
+}
+
+/* .about, .contact{
+    padding:40px 20px;
+    background: #f9f9f9;
+    text-align: center;
+} */
+
+/* .social a{
+    margin:0 10px;
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+} */
+/* 
+footer{
+    background: black;
+    color:white;
+    text-align: center;
+    padding:20px 0;
+}
+
+@media (max-width: 768px) {
+    .products { */
+        /* flex-direction: column;
+        align-items: center;
+    }
+    .product{
+        width:90%;
+    }
+    header nav a{
+        display: block;
+        margin:5px 0;
+    }
+} */
+
